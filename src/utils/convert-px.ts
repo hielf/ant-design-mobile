@@ -25,9 +25,9 @@ export function convertPx(px) {
   if (tenPxTester === null || tester === null) return px
 
   if (tenPxTester.getBoundingClientRect().height === 10) {
-    return px;
+    return px
   }
 
   tester.style.setProperty('--size', px.toString())
-  return tester.getBoundingClientRect().height;
+  return tester.getBoundingClientRect().height
 }
